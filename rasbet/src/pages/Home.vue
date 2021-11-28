@@ -1,14 +1,32 @@
 <template>
-  <main-layout>
-    <p>Home Page</p>
-  </main-layout>
+<div>
+  <p>test</p>
+</div>
 </template>
 
 <script>
-import MainLayout from '../pages/Main.vue'
 export default {
-  components: {
-    MainLayout
-  }
+  name: 'Home',
 }
 </script>
+<style lang="css">
+  .title {
+    text-align: center;
+    background-color: blue;
+  }
+
+  .wrapper {
+    display: flex;
+    height: 100%;
+  }
+  .content {
+    flex-basis: 80%;
+  }
+
+  .title, 
+  .wrapper,
+  .navbar, 
+  .content {
+    margin: 0;
+  }
+</style>
